@@ -1,0 +1,227 @@
+.App {
+  text-align: center;
+}
+.brand{
+  display: flex;
+  align-items: center;
+}
+.brand img{
+  width: 25%;
+  height: 25%;
+  padding: 1em;
+}
+.wrapper{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap:wrap;
+  font-family: 'Roboto', sans-serif;
+}
+.container{
+  padding: 0 !important;
+}
+/*.sidebar{
+  flex-basis: 15%;
+}*/
+.muidocs-icon-custom-github:before {
+    content: "\e625";
+}
+[class^="muidocs-icon-"], [class*=" muidocs-icon-"] {
+	font-family: 'material-ui-icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper > div:nth-child(3) {
+    flex-basis: 100%;
+}
+
+.dashboard-page{
+  padding: 2em;
+}
+.h320{
+    height: 320px;
+}
+.h420{
+  height: 420px;
+}
+
+.sameheight-container{
+  height: 320px;
+}
+section:nth-child(2) .sameheight-container {
+  height: 420px;
+}
+
+.dashboard-page .stats .stat {
+    vertical-align: middle;
+}
+.stat .value {
+    font-size: 20px;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+}
+.stat .name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Roboto', sans-serif;
+}
+.stat {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    margin-right: 10px;
+}
+ .stat-icon {
+    color: #BDBDBD;
+    display: inline-block;
+    font-size: 26px;
+    text-align: center;
+    vertical-align: middle;
+    width: 50px;
+}
+.stat-col{
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+}
+
+.line-progress{
+  margin-bottom: 1.2em !important;
+  margin-top: 0.6em !important;
+}
+svg.recharts-surface {
+    overflow: visible;
+}
+
+
+.react-grid-Cell__value{
+  font-weight: 300;
+font-style: italic;
+}
+.react-grid-HeaderCell, .react-grid-Cell{
+  border-right: none !important;
+  text-align: center ;
+}
+.react-grid-Cell:nth-child(2){
+  text-align: left ;
+}
+
+
+
+@media (min-width: 1200px)
+.stat .name {
+    font-size: 0.9vw;
+}
+@media (min-width: 1200px)
+.stat .value {
+    font-size: 1.3vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Map*/
+/*body {
+    background: #33383b url("http://www.tonysnewyorkstylepizzeria.com/wp-content/uploads/2012/12/Wood-background-black-wallpapers-wallpaper-476440.jpg");
+    overflow: hidden;
+}*/
+
+#vmap {
+    z-index: -1000;
+    width: 700px;
+    height: 350px;
+}
+
+.holder {
+    /*width: 986px;
+    height: 400px;*/
+    overflow: hidden;
+    position: relative;
+    z-index: 1000;
+    /*border: dashed 3px #829db2;*/
+    background-color:#a4bed9;
+    background-image:
+      -webkit-linear-gradient(#9bb3cf 1px, transparent 1px),
+      -webkit-linear-gradient(0, #9bb3cf 1px, transparent 1px);
+      /*-moz-linear-gradient(#9bb3cf 1px, transparent 1px),
+      -moz-linear-gradient(0, #9bb3cf 1px, transparent 1px);*/
+    background-size:44px 44px;
+
+}
+
+.hold_it {
+    padding: 6px;
+    background: #fff;
+    display: inline-block;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2);
+    /*position: absolute;*/
+    /*top:50%;
+    left:50%;*/
+
+    border-radius: 4px;
+}
+
+
+.jqvmap-label {
+    background: rgba(0,0,0,.7);
+    position: absolute;
+    display: none;
+    -webkit-box-shadow: inset 0px -10px 10px rgba(0,0,0,.7), 0px 0px 0px 1px rgba(0,0,0,1), inset 0px 1px 0px 0px rgba(255,255,255,.3);
+    -moz-box-shadow: inset 0px -10px 10px rgba(0,0,0,.7), 0px 0px 0px 1px rgba(0,0,0,1), inset 0px 1px 0px 0px rgba(255,255,255,.3);
+    box-shadow: inset 0px -10px 10px rgba(0,0,0,.7), 0px 0px 0px 1px rgba(0,0,0,1), inset 0px 1px 0px 0px rgba(255,255,255,.3);
+
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: #fff;
+    color: white;
+    font: 11px "Helvetica Neue", Helvetica, Sans;
+    padding: 5px 10px 5px 8px;
+    z-index: 2000;
+}
+
+.jqvmap-label:before {
+    margin-right: 5px;
+    content:'';
+    background: transparent;
+    display: inline-block;
+    border-radius: 14px 14px 14px 0;
+    width: 4px;
+    height: 4px;
+    border: 3px solid #f33;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: relative;
+    -webkit-box-shadow: -1px 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: -1px 1px 2px rgba(0,0,0,.2);
+    box-shadow: -1px 1px 2px rgba(0,0,0,.2);
+}
+
+.jqvmap-region
+{
+  cursor: pointer;
+}
